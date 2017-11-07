@@ -1,0 +1,280 @@
+/* Noah's CSS Stuff */
+/* CSS for Arrows */
+
+body {
+  /*this makes there be no scrolling*/
+  overflow: hidden;
+}
+
+/* the next 4 create arrows to go on the page*/
+.arrow-up {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  top: 2%;
+  left: 57.5%;
+  /*margin-top: -50px;*/
+  margin-left: -75px;
+}
+
+.arrow-down {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  bottom: 2%;
+  left: 57.5%;
+  margin-left: -75px;
+}
+
+.arrow-right {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  top: 50%;
+  left: 94%;
+  margin-top: -40px;
+}
+
+.arrow-left {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  margin-top: -40px;
+}
+
+
+.full-spectrum .sp-palette {
+  max-width: 220px;
+
+}
+
+/* this is the id for the container of the canvas*/
+#main{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+/*this is the id for the canvas*/
+#respondCanvas, #dotCanvas {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 15%;
+  z-index: 1;
+}
+
+.side-bar {
+  background-color: #FF9900;
+  float: left;
+  width: 15%;
+  height: 99%;
+  z-index: 10;
+  /*min-width: 220px;*/
+  cursor: url(default);
+}
+
+.padding-side {
+  padding: 7px;
+}
+
+.example-base {
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #333; }
+
+.hide {
+  display: none; 
+}
+
+
+
+
+.l-popout {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  .l-popout iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+.nameText{
+  color: white;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 70;
+}
+#colorPicker{
+
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 0px;
+  left:0px;
+  width:84%;
+
+}
+
+input[type=text] {
+    position: relative;
+    background-color: #6599FF;
+    border: 1px solid #848484; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
+    border-radius: 30px; 
+    outline:0; 
+    z-index:5;
+    text-align: center;
+    
+}
+#XandY{
+  font-weight: bolder;
+    color: white;
+    font-size: 24px;
+}
+.coordLabel{
+
+  display: inline;
+  /*vertical-align: bottom;*/
+}
+#MyEdit{
+  font-weight: bolder;
+  color:white;
+  font-size:20px;
+}
+
+#input[type="submit"]{
+  background-color: #6599FF;
+
+}
+#submitButton{
+  position: relative;
+  background-color: #6599FF;
+  font-size: 24px;
+  height: 35px;
+  z-index: 5;
+  /*margin-bottom: 10px;*/
+}
+#drawing-canvas {
+  border: 3px solid #999; 
+}
+
+.colorbox {
+  width: 22px;
+  height: 22px;
+  margin: 1px;
+  display: inline-block;
+  border: 3px solid black; }
+
+.example-leaderboard {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  overflow: auto;
+  color: #666; }
+  .example-leaderboard table {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse; }
+    .example-leaderboard table th {
+      background: #EEE;
+      border-bottom: 1px solid #CCC;
+      font-size: 12px;
+      color: #999;
+      padding: 5px 10px;
+      text-align: left; }
+    .example-leaderboard table td {
+      border-bottom: 1px solid #EEE;
+      padding: 10px;
+      color: #28a562; }
+      .example-leaderboard table td em {
+        font-style: normal;
+        font-weight: bold;
+        color: #666; }
+    .example-leaderboard table tr:first-child td {
+      background: green; }
+  .example-leaderboard input {
+    box-sizing: border-box;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 0px 10px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none;
+    border: 1px solid #CCC; }
+    .example-leaderboard input.example-leaderboard-name {
+      width: 186px;
+      margin-right: 10px; }
+    .example-leaderboard input.example-leaderboard-score {
+      width: 300px; }
+
+#highestscore {
+  margin-top: 20px;
+  font-size: 14px; }
+
+/* Presence */
+#presenceDiv {
+  text-align: center; }
+
+/* Tetris */
+.tetris-body {
+  width: 600px; }
+
+#canvas0, #canvas1 {
+  display: inline-block;
+  border: 4px solid #424547; 
+}
+
+#restartButton {
+  margin-top: 5px; 
+}
+
+#gameInProgress {
+  font-size: 14px; 
+}

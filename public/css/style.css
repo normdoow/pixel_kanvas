@@ -1,0 +1,332 @@
+/* Noah's CSS Stuff */
+/* CSS for Arrows */
+
+body {
+  /*this makes there be no scrolling*/
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  color: #7F5C26;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* the next 4 create arrows to go on the page*/
+.arrow-up {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  top: calc(2% + 40px);
+  left: 50%;
+  margin-left: -50px;
+}
+
+.arrow-down {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.arrow-right {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  top: 50%;
+  right: -1%;
+  margin-top: -40px;
+}
+
+.arrow-left {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  content:url(../images/arrow.png);
+  opacity: 0.3;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  z-index: 12;
+
+  /*does the positioning*/
+  position: absolute;
+  top: 50%;
+  left: 3.5%;
+  margin-top: -40px;
+}
+
+#coord-box {
+  overflow: hidden;
+}
+
+#coord-box>form p {
+  display: inline;
+}
+
+#login-error p { 
+  color: red;
+}
+
+.full-spectrum .sp-palette {
+  max-width: 220px;
+}
+
+#header-bar {
+  height: 40px;
+  background-color: #FF9900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 5px;
+  margin: 0;
+  z-index: 10;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#header-bar>h1 {
+  display: inline;
+  padding: 0;
+  margin: 0 20px;
+  font-size: 1.5em;
+}
+
+#header-bar>p {
+  background-color: #FFB84C;
+  color: #7F5C26;
+  border: 1px solid #7F5C26;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+#header-bar>form {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+
+#header-bar .float-right {
+  float: right;
+}
+
+/* this is the id for the container of the canvas*/
+#main {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+#logo {
+  width: 100%; 
+}
+
+/*this is the id for the canvas*/
+#respondCanvas, #dotCanvas, #propertyCanvas {
+  cursor:url(../images/brush2.png),url(../images/brush2.png),auto;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.side-bar {
+  display: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FF9900;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  width: 15%;
+  /*height: 100%;*/
+  z-index: 10;
+  /*min-width: 220px;*/
+  cursor:url(default);
+  padding: 5px;
+  margin: 0;
+  overflow: auto;
+}
+
+.hide {
+  display: none; 
+}
+
+#locationLink {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.nameText{
+  color: white;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 70;
+}
+
+.coord-input {
+  border-radius: 3px;
+  border: 0;
+  background-color: #FFB84C;
+  color: #7F5C26;
+  
+  margin: 3px !important;
+  text-align: center;
+  font-size: 1em;
+}
+
+#sharePopDown {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 10;
+  top: 40px;
+  padding: 10px;
+  width: 170px;
+  right: 50px;
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.topButton {
+  background-color: #FFB84C;
+  color: #7F5C26;
+  border: 1px solid #7F5C26;
+  border-radius: 3px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.smallButton {
+  background-color: #FFB84C;
+  color: #7F5C26;
+  border: 1px solid #7F5C26;
+  border-radius: 3px;
+  font-size: .4em;
+  cursor: pointer;
+}
+
+.topButton:disabled {
+  background-color: rgba(255,184,76, 0.4);
+  background-color: #ecdcc4;
+  border: 1px solid #ba9b6b;
+  cursor: default;
+}
+
+.topButton:hover:enabled {
+  background-color: #FF9900;
+}
+
+.underline-butt:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+#MyEdit {
+  /*font-weight: bolder;*/
+  /*font-size:1.25em;
+  text-align: center;
+  display: inline;
+  margin: 0 20px;
+  width: 200px;*/
+  display: inline;
+  padding: 2px;
+  margin: 0 40px;
+}
+
+#drawing-canvas {
+  border: 3px solid #999; 
+}
+
+/* Presence */
+#presenceDiv {
+  text-align: center; 
+}
+
+.border {
+  border: 1px solid #7F5C26 !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.pk-well {
+  background-color: #FFB84C;
+  color: #7F5C26;
+  border: 1px solid #7F5C26;
+  border-radius: 3px;
+  z-index: 12;
+}
+
+/* used for feedback */
+.corner {
+  position: fixed;
+  right: -31px;
+  bottom: 30px;
+}
+/* used for feedback */
+.rotate {
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.feedback-padding {
+  padding-left: 20px;
+}
+
+.top-bottom-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

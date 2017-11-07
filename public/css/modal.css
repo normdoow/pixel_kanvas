@@ -1,0 +1,92 @@
+/* The Modal (background) */
+#loginModal table {
+    width: 100%;
+}
+
+#loginModal h3 {
+    display: inline;
+}
+
+#loginModal table td {
+    text-align: right;
+}
+
+#loginModal table input {
+    width: 100%;
+}
+
+#menuModal .close-button {
+    padding: 10px 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100;
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #FFB84C;
+    margin: auto;
+    padding: 10px 20px;
+    border: 1px solid #888;
+    width: 25%;
+    border-radius: 3px;
+}
+
+.pay-modal-size {
+    width: 40%;
+}
+
+/* The Close Button */
+.close-button {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.big-modal {
+    display: none; /* Hidden by default */
+}
+
+/* Modal Content */
+.big-modal-content {
+    margin: auto;
+    padding-top: 150px;
+    width: 85%;
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+    .big-modal {
+        display: block; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 500; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.82); /* Black w/ opacity */
+    }
+}

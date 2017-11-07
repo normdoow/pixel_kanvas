@@ -1,0 +1,194 @@
+
+/* tabs for the menu */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF9900;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #996e2e;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #FFB84C;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*padding-bottom: 350px;*/
+    height: 55%;
+}
+
+/* more css stuff for menu*/
+.menu-content {
+    background-color: #FFB84C;
+    margin: auto;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.pin-to-right {
+    float: right;
+}
+
+.padding-left {
+    padding-left: 230px;
+}
+
+.left-column {
+    float: left;
+    display: inline-block;
+    position: fixed;
+}
+
+.right-column {
+    margin-left: 300px;
+   	display: inline-block;
+    float: left;
+}
+
+/* being used for the select proptery to buy button currently */
+.margin-right {
+    margin-left: 400px;
+}
+
+.property-tile-margins {
+    margin: 10px;
+}
+
+.tile-margin-left {
+    margin-left: 30px;
+}
+
+.tile-margin-right {
+    margin-right: 30px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.scroll-box {
+    overflow: auto;
+    border: 1px solid;
+    width: 100%;
+    height: 55%;
+    background-color: #f6d095;
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
+
+hr {
+    color: #FFB84C;
+    background-color: #FFB84C;
+    border-color: #FFB84C;
+    width: 85%;
+}
+
+.float-right {
+    float: right;
+}
+
+/* change the default scrollbar */
+.scroll-box::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.scroll-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.scroll-box::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(255,153,0); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/* friends adding dropdown css */
+
+.dropdown {
+    /*position: relative;*/
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    max-width: 180px;
+    overflow: auto;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop-scroll {
+    overflow: auto;
+    border: 1px solid;
+    width: 90%;
+    height: 100px;
+    padding: 5px;
+    padding-right: 12px;
+    background-color: #f6d095;
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
+
+.show {
+    display:block;
+}
+
+.email-text {
+    font-size: 12px;
+}
+
+/* for the red x in the propertys menu*/
+
+.remove-friendX {
+    color: red;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: -10px;
+    margin-top: -3px;
+}
+
+.custom-input {
+    width: 120px;
+}

@@ -1,0 +1,59 @@
+#side-tools {
+    position: absolute; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 10px;
+    top: 50px;
+    width: 50px; /* Full width */
+    height: 45%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #FF9900;
+    border-radius: 3px;
+}
+
+.color-button {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    margin: 1px 5px 1px 5px;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+}
+
+.color-button:hover {
+    border-color: white;
+    cursor: pointer;
+}
+
+.erase-button {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: 2px 13px 2px 13px;
+    background-color: #FFB84C;
+    background-image: url("../images/eraser.png");
+    background-repeat:no-repeat;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+}
+
+.erase-button:hover {
+    border-color: white;
+    cursor: pointer;
+}
+
+.button-left {
+    margin-right: 1px;
+}
+.button-right {
+    margin-left: 1px;
+}
+
+.bar-text {
+    text-align: center;
+    top: 175px;
+    position: absolute;
+    margin-left: 6px;
+}
